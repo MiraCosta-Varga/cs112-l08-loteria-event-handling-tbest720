@@ -3,7 +3,7 @@
 
 # **Lab #8 - Loteria + Event Handling**
 
-EChALE STEM (**E**mpowering **Ch**icanx **A**nd **L**atinx **E**xploring **STEM**) Club hosts a fundraising event every semester where attendees pay for a playing card (the sheet with multiple Loteria cards to fill). Through their personal identity exploration, as well as events on campus like Professor Alicia Lopez's workshop on Chicanx/Latinx identities, they've reflected and decided to create a new version of Loteria to address some of the issues in the original they saw. Instead of the traditional cards, they've replaced them all with STEM professions and STEM related things in Spanish to create their own EChALE STEM Loteria!
+EChALE STEM (**E**mpowering **Ch**icanx **A**nd **L**atinx **E**xploring **STEM**) Club hosted a fundraising event every semester where attendees pay for a playing card (the sheet with multiple Loteria cards to fill). Through their personal identity exploration, as well as events on campus like Professor Alicia Lopez's workshop on Chicanx/Latinx identities, they've reflected and decided to create a new version of Loteria to address some of the issues in the original they saw. Instead of the traditional cards, they've replaced them all with STEM professions and STEM related things in Spanish to create their own EChALE STEM Loteria!
 
 Through your understanding of the Loteria game mechanics and consultation with EChALE members you've agreed on the following wireframe for the GUI:
 ![Wireframe showing GUI components](https://imgur.com/HQd6DPS.png)
@@ -15,7 +15,7 @@ Your part of the project is to be the finisher, complete the GUI program so that
 ## **List of Requirements/Steps:**
 0. Familiarize yourself with the code
 	- `LoteriaCard` is given to you, no edits will be necessary in this file
-	- Remind yourself about the requirements for JavaFX applications, their sturcture, and how to get a GUI working
+	- Remind yourself about the requirements for JavaFX applications, their structure, and how to get a GUI working
 1. Get the look down
 	- Focus first on laying out all the GUI components, not necessarily looking exactly the same as the working screenshot but just the components themselves. Get basic things like the size and locations working correctly so that it resembles the wireframe
 		- Specifically, the `VBox` layout containing the `titleLabel`, `cardImageView`, `messageLabel`, and `drawCardButton`. You can add the `gameProgressBar` now but it's for the Hacker Challenge, so you can wait till the end
@@ -29,8 +29,8 @@ Your part of the project is to be the finisher, complete the GUI program so that
 ## **Hacker Challenge**
 The steps above only pik a card randomly, over and over again, which meanns it can repeat cards! Upgrade the code so that it actually only shows each card once, still chosen at random, and ends the game:
 - NOTE: You should not be using any data structures we haven't covered yet in CS111/CS112, that means stick to arrays 😄
-- Use the [ProgressBar](https://docs.oracle.com/javase/8/javafx/api/javafx/scene/control/ProgressBar.html) to show how many cardrs have been drawn. Note that the progress is set between 0.0 and 1.0, so calculate it using the array size to make your program flexible for future card additions!
-- Also, change the `gameProgressBar` to red when thhe game is over
+- Use the [ProgressBar](https://docs.oracle.com/javase/8/javafx/api/javafx/scene/control/ProgressBar.html) to show how many cards have been drawn. Note that the progress is set between 0.0 and 1.0, so calculate it using the array size to make your program flexible for future card additions!
+- Also, change the `gameProgressBar` to red when the game is over
 - Change the `messageLabel` to the game over message: `"GAME OVER. No more cards! Exit and run program again to reset ^_^"`
 - Change the `cardImageView` to the EChALE logo
 - Disable the `drawCardButton` to prevent the user from drawing more cards
